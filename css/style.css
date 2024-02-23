@@ -181,6 +181,23 @@ li:hover {
   color: limegreen;
 }
 
+.extra_links_wrap{
+  padding: 0px 0px 3px 0px;
+}
+
+.extra_links{
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  color: gray;
+}
+
+.extra_links:hover{
+  text-decoration: underline;
+  color: #3dcd58;
+}
+
 @media only screen and (max-width: 1400px) {
   .submenu-container {
     display: none;

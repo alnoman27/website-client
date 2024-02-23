@@ -3,6 +3,11 @@ function getMenuData() {
     menus: [
       {
         menu_title: "Menu 1",
+        extra_links: [
+          { title: "View all insights", link: "#" },
+          { title: "Blog", link: "#" },
+          { title: "Contact us", link: "#" },
+        ],
         submenus: [
           {
             submenu_title: "Proper",
@@ -139,6 +144,10 @@ function getMenuData() {
 
       {
         menu_title: "Menu 2",
+        extra_links: [
+          { title: "View all insights", link: "#" },
+          { title: "Contact us", link: "#" },
+        ],
         submenus: [
           {
             submenu_title: "Profile",
@@ -378,29 +387,6 @@ function getMenuData() {
   };
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // JS Code here
 var selectedMenuItem = null;
 
@@ -479,6 +465,7 @@ function toggleMenu(menuName) {
   if (currentMenu) {
     var submenuHTML = "";
 
+
     currentMenu.submenus.forEach(function (submenu, index) {
       var isActive = index === 0 ? " active" : "";
       var arrowActiveClass = isActive ? " active" : "";
@@ -504,6 +491,21 @@ function toggleMenu(menuName) {
         '" style="height: 20px; width: 25px; padding-left: 10px; position: absolute; right: 20px"/>' +
         "</div>";
     });
+
+    if (currentMenu.extra_links) {
+      submenuHTML += '<hr style="margin: 30px 0px 20px 0px; background-color: gray;">';
+    }
+
+    if (currentMenu.extra_links) {
+      currentMenu.extra_links.forEach(function (link, index) {
+        submenuHTML +=
+          '<div class="extra_links_wrap"><a class="extra_links" href="' +
+          link.link +
+          '">' +
+          link.title +
+          "</a></div>";
+      });
+    }
 
     submenuContainer.innerHTML = submenuHTML;
     menuContainer.innerHTML = "";
