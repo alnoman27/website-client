@@ -481,7 +481,7 @@ function toggleMenu(menuName) {
         submenu.icon +
         '" alt="' +
         submenu.submenu_title +
-        ' Icon" style="height: 20px; width: 20px; padding-right: 15px; font-family: "Nunito Sans";"/>' +
+        ' Icon" style="height: 20px; width: 20px; padding-right: 15px; font-family: "Graphik";"/>' +
         "<span>" +
         submenu.submenu_title +
         "</span>" +

@@ -1,7 +1,40 @@
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts//Graphik/Graphik.ttf') format('truetype');
+  /* Add additional formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik/Graphik-Bold.ttf') format('truetype');
+  /* Add additional formats if necessary */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik/GraphikBlack.otf') format('otf');
+  /* Add additional formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik/GraphikBold.otf') format('otf');
+  /* Add additional formats if necessary */
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 body {
   padding: 0;
   margin: 0;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   transition: 0.3s ease;
 }
 
@@ -9,7 +42,7 @@ nav {
   text-align: center;
   height: 40px;
   background-color: #f3f2f2;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   padding-top: 30px;
 }
 
@@ -23,7 +56,7 @@ li {
   border-bottom: 3px solid transparent;
   height: 70%;
   display: flex;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   align-items: center;
   transition: border-bottom 0.5s ease;
 }
@@ -45,14 +78,14 @@ li:hover {
   align-items: center;
   width: fit-content;
   margin: auto;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   height: 45px;
 }
 
 #menuContainer {
   display: none;
   margin: auto;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 .submenu-container {
@@ -60,7 +93,7 @@ li:hover {
   width: 50%;
   max-width: 1000px;
   margin: auto;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   height: fit-content;
   z-index: 10;
 }
@@ -70,7 +103,7 @@ li:hover {
   min-width: 250px;
   max-width: 300px;
   padding: 20px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 .submenu-content {
@@ -80,7 +113,7 @@ li:hover {
   /* overflow-y: scroll; */
   position: relative;
   background-color: #f9f9f9;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   padding: 20px 20px 30px 20px;
 }
 
@@ -89,7 +122,7 @@ li:hover {
   cursor: pointer;
   top: 20px;
   right: 20px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 .submenu {
@@ -98,13 +131,13 @@ li:hover {
   border-radius: 3px;
   padding: 10px 25px;
   border: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 .submenus.active {
   background-color: #f9f9f9;
   border: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   transition: background-color 0.3s ease;
 }
 
@@ -115,12 +148,12 @@ li:hover {
 
 .submenu-arrow {
   display: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 .submenu-arrow.active {
   display: inline-block;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 #submenuContainerWrapper {
@@ -129,14 +162,14 @@ li:hover {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   border-radius: 0px 0px 3px 3px;
 }
 
 .bottom-row {
   height: 20px;
   background-color: white;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
 }
 
 .common-div {
@@ -146,7 +179,7 @@ li:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   cursor: pointer;
 }
 
@@ -156,7 +189,7 @@ li:hover {
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   cursor: pointer;
 }
 
@@ -188,7 +221,7 @@ li:hover {
 .extra_links{
   font-weight: bold;
   font-size: 14px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Graphik", sans-serif;
   text-decoration: none;
   color: gray;
 }
@@ -204,7 +237,7 @@ li:hover {
     width: 80%;
     max-width: 1000px;
     margin: auto;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Graphik", sans-serif;
     height: fit-content;
     z-index: 10;
   }
@@ -215,7 +248,7 @@ li:hover {
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
       rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
       rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Graphik", sans-serif;
     border-radius: 0px 0px 3px 3px;
   }
 }
